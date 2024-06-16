@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pj-co2-device"
+version = "0.1.0"
+description = ""authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [
+    { include = "grove", from = "src"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+smbus2 = "^0.4.3"
+azure-iot-hub = "^2.6.1"
+azure-iot-device = "^2.13.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
